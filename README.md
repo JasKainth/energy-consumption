@@ -29,29 +29,7 @@ The metric used to test the effectiveness of the model was Root Mean Squared Err
 
 ### Summary
 
-$$
-\begin{aligned}
-& \text {Table 1 Model Performance Summary }\\
-&\begin{array}{lcc}
-\hline
-\text { Model } & \text { RMSE } & \text { RMSE \% Decrease from Null Model }\\
-\hline 
-\text{Null Model} & 7314.7 & \text{NA} \\
-\text{Linear Regression with PCA} & 4512.1 & 38.3\% \\
-\text{Linear Regression}& 4438.3 & 39.3\% \\
-\text{SVM with PCA} & 4541.2 & 37.9\% \\
-\text{SVM} & 5205.8 & 28.8\% \\
-\text{RF with PCA} & 5413.2 & 26.0\% \\
-\text{KNN with PCA} & 5048.1 & 31.0\% \\
-\text{KNN} & 5703.5 & 22.0\% \\
-\text{LASSO with PCA} & 4470.2 & 38.9\% \\
-\text{LASSO} & 4377.5 & 40.2\% \\
-\text{Ridge with PCA} & 4483.5 & 38.7\% \\
-\text{Ridge} & 4404.3 & 39.8\% \\
-\hline
-\end{array}
-\end{aligned}
-$$
+![Summary Table](https://github.com/JasKainth/energy-consumption/blob/main/summary-table.png)  
 
 Using the table above, we see that the best model we had was the LASSO when not using the PCA predictors. However, the Linear Regression and Ridge Regression models perform almost as well (along with the SVM with PCA model).  
 * A pattern that we see for all the models is, that when the actual KWH is on the higher end, our models generally underestimate the electricity. This might be something we want to take a look at when considering how to improve our model performance.  
